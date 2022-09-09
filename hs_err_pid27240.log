@@ -1,0 +1,36 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb5d6d31a7, pid=27240, tid=25992
+#
+# JRE version: Java(TM) SE Runtime Environment 18.9 (11.0.16+11) (build 11.0.16+11-LTS-199)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM 18.9 (11.0.16+11-LTS-199, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x3631a7]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xverify:none -Dio.quarkus.force-color-support=true -Dquarkus-internal.serialized-app-model.path=C:\Projects\Quarkus\code-with-quarkus\target\quarkus\bootstrap\dev-app-model.dat -javaagent:C:\Users\RAVIKUMAR\.m2\repository\io\quarkus\quarkus-class-change-agent\2.12.1.Final\quarkus-class-change-agent-2.12.1.Final.jar -XX:TieredStopAtLevel=1 -agentlib:jdwp=transport=dt_socket,address=localhost:5005,server=y,suspend=n -Djava.util.logging.manager=org.jboss.logmanager.LogManager C:\Projects\Quarkus\code-with-quarkus\target\code-with-quarkus-dev.jar
+
+Host: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, 8 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+Time: Fri Sep  9 09:55:36 2022 India Standard Time elapsed time: 1.773482 seconds (0d 0h 0m 1s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000018d30bde000):  JavaThread "build-8" [_thread_in_vm, id=25992, stack(0x0000004c24700000,0x0000004c24800000)]
+
+Stack: [0x0000004c24700000,0x0000004c24800000],  sp=0x0000004c247ff240,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3631a7]
+V  [jvm.dll+0x62a312]
+V  [jvm.dll+0x363c6a]
+V  [jvm.dll+0x363ef7]
+V  [jvm.dll+0x3dcff1]
+V  [jvm.dll+0x729fa0]
+V  [jvm.dll+0x722b74]
